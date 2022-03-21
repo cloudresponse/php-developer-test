@@ -36,7 +36,7 @@ could be achieved in your command.
 
 ## GJ Notes
 
-This seems to be functionally complete. Though much more could be done to refactor the methods in the UserSyncServiceProvider and maybe break out into actions. 
+This seems to be functionally complete. Though much more could be done to refactor the methods in the UserSyncServiceProvider and maybe break out into actions / factories etc. 
 
 Two commands created:
 
