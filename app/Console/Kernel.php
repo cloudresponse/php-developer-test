@@ -14,6 +14,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         //
+        ApiPingCommand::class,
+        SyncUsersCommand::class,
     ];
 
     /**
