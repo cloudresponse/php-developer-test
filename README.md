@@ -33,3 +33,24 @@ the data from the API (again this isnt required but it would be great to see/hea
 
 We could potentially use this command in a schedule to repeatedly update the users from the API, think about how this
 could be achieved in your command.
+
+## GJ Notes
+
+This seems to be functionally complete. Though much more could be done to refactor the methods in the UserSyncServiceProvider and maybe break out into actions. 
+
+Two commands created:
+
+    sync:pingApi -> Quick test that API is available
+
+    sync:users {--all} -> By default gets the first page and syncs to DB via upsert. --all option gets all pages.
+
+Six tests created and passing:
+
+    ✓ command ping api
+    ✓ command sync users
+    ✓ api available
+    ✓ users exist in db
+    ✓ get first page of users
+    ✓ get all pages of users
+
+
