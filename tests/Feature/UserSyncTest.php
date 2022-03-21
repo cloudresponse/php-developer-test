@@ -21,4 +21,29 @@ class UserSyncTest extends TestCase
         $response = UserSyncServiceProvider::apiPing();
         $this->assertTrue(true, $response->successful());
     }
+
+    public function test_users_exist_in_db()
+    {
+        // Sync users
+        // Check the users is at the right count for the scenario
+        // Check the right properties exist on a user.
+    }
+
+    public function test_get_first_page_of_users()
+    {
+        $users = UserSyncServiceProvider::getUsersFromApi();
+
+        // Can we match this against a DTO?
+
+        // Check the count of all users. Should be 6.
+    }
+
+    public function test_get_all_pages_of_users()
+    {
+        $users = UserSyncServiceProvider::getUsersFromApi(allPages: true);
+
+        // Can we match this against a DTO?
+
+        // Check the count of all users. Should be 12.
+    }
 }
